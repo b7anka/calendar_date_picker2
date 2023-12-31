@@ -70,6 +70,7 @@ class CalendarDatePicker2Config {
     this.modePickerTextHandler,
     this.selectedRangeDayTextStyle,
     this.rangeBidirectional = false,
+    this.daySplashColor
   })  : calendarType = calendarType ?? CalendarDatePicker2Type.single,
         firstDate = DateUtils.dateOnly(firstDate ?? DateTime(1970)),
         lastDate =
@@ -129,6 +130,9 @@ class CalendarDatePicker2Config {
 
   /// The highlight color for selected day(s)
   final Color? selectedDayHighlightColor;
+
+  /// The splash color for day when tapped
+  final Color? daySplashColor;
 
   /// The highlight color for day(s) included in the selected range
   /// Only applicable when [calendarType] is [CalendarDatePicker2Type.range]
